@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'Todo_list.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'Todo_list',
-        'HOST' : 'mongodb+srv://Joy_M_98:Mongo2112@joy-mongo-6ogtg.mongodb.net/Todo_list?retryWrites=true&w=majority',
-        'USER' : 'Joy_M_98',
-        'PASSWORD' : 'Mongo2112',
+        'NAME': 'database_name,
+        'HOST' : 'connection_link',
+        'USER' : 'username,
+        'PASSWORD' : 'password',
     }
 }
 
