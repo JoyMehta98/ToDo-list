@@ -6,9 +6,9 @@ from django.http import HttpResponseRedirect
 
 def connect():
     conn = MongoClient('localhost' , 27017)
-    db = conn.todo_db
+    db = conn.database_name
     print("DB name: " , db)
-    collection = db.heroku_app
+    collection = db.collection_name
     print("Collection name: " , collection)
     return collection
 
