@@ -5,8 +5,8 @@ from datetime import datetime
 from django.http import HttpResponseRedirect
 
 def connect():
-    conn = MongoClient('localhost' , 27017)
-    db = conn.todo_db
+    conn = MongoClient('mongodb+srv://Joy_M_98:Mongo2112@joy-mongo-6ogtg.mongodb.net/Todo_list?retryWrites=true&w=majority')
+    db = conn.Todo_list
     print("DB name: " , db)
     collection = db.heroku_app
     print("Collection name: " , collection)
@@ -40,5 +40,6 @@ def home(request):
 
 
 def todo_tasks(request):
+    print("Adding phase")
     add_data(request)
     return HttpResponseRedirect("/")
