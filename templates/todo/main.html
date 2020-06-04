@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br />
+
+<form action="/" method="POST">
+    {% csrf_token %}
+    <ul class="collection">
+        {% for task in todo_tasks %}
+            <li class="blue-text collection-item"> {{ task.text }}
+                <button class="btn btn-small red right" type="submit" name="delete" value="{{task.id}}" style="margin-top: -5px;"> Delete </button>
+            </li>
+        {% endfor %}
+    </ul>
+</form>
+
+{% endblock content %}
