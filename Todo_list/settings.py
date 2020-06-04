@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'Todo_list.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'todo_db',
+        'NAME': 'database_name',
     }
 }
 
