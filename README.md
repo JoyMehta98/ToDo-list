@@ -5,6 +5,8 @@ With connection to mongodb it will save your tasks into database having tasks , 
 
 <b>Procfile</b> is needed if you are deploying your application to heroku server and for that you need to install django-heroku and gunicorn libraries using pip. To deploy into heroku live server check this out: https://medium.com/@qazi/how-to-deploy-a-django-app-to-heroku-in-2018-the-easy-way-48a528d97f9c 
 
+<b>(In above link "heroku run python manage.py migrate" command should be excuted after "git push heroku master")</b>
+
 
 <b>Localhosting:</b>
 In master branch databse will be hosted on locally
